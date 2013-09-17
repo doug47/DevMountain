@@ -9,23 +9,38 @@ body {
 	font-size: 18px;
 }
 
+::selection {
+	background: #2AABE2; /* Safari */
+	color: #fff;
+}
+
 a {
+	color:#2AABE2;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 nav {
 	position: fixed;
-	width:1000px;
+	width: 100%;
 	height:100px;
-	padding: 0px 15%;
 	background-color: #fff;
-	margin:0px auto;
 	z-index: 10;
+	box-sizing: border-box;
+}
+
+nav .container {
+	position: relative;
+	width:1000px;
+	max-width:1200px;
+	margin: 0px auto;
+	height: 100px;
+	box-sizing: border-box;
 }
 
 nav img {
 	height:100%;
-	margin-right: 30px;
+	margin-right: 20px;
 }
 
 nav a.nav-item {
@@ -35,7 +50,8 @@ nav a.nav-item {
 	height:100%;
 	line-height: 100%;
 	vertical-align: middle;
-	padding:0px 10px;
+	padding:0px 11px;
+	box-sizing: border-box;
 }
 
 nav a.nav-btn {
@@ -43,7 +59,7 @@ nav a.nav-btn {
 	text-decoration: none;
 	color:#404041;
 	vertical-align: middle;
-	padding:10px 30px;
+	padding:10px 20px;
 	margin:0px 0px 0px 30px;
 	background: #2AABE2;
 	margin-top:-80px;
@@ -123,6 +139,7 @@ a.landing-img img {
 	font-weight: normal;
 	width:40%;
 	float:right;
+	text-align: left;
 }
 
 .about .container a {
@@ -137,13 +154,23 @@ a.landing-img img {
 }
 
 footer {
-	width:1000px;
+	width:100%;
 	height:100px;
-	padding: 0px 15%;
 	background-color: #000;
 	margin:0px auto;
 	z-index: 10;
 	bottom: 0px;
+	box-sizing: border-box;
+}
+
+
+footer .container {
+	position: relative;
+	width:1000px;
+	max-width:1200px;
+	margin: 0px auto;
+	height: 100px;
+	box-sizing: border-box;
 }
 
 footer a.nav-item {
@@ -167,4 +194,757 @@ footer a.copyright {
 	vertical-align: middle;
 	padding:0px 10px;
 	float: right;
+}
+
+.program {
+	width:100%;
+	background: url(img/classroom.jpg) no-repeat center center fixed; 
+  	background-position: 0px -550px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.program .container {
+	padding:50px;
+}
+
+.program h1 {
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 200px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.programinfo {
+	width:100%;
+	background: #2AABE2;
+	margin: 0px;
+}
+
+.programinfo .container {
+	padding:2% 0px;
+	box-sizing: border-box;
+}
+
+.programinfo .third {
+	float: left;
+	width:29%;
+	height:250px;
+	box-sizing:border-box;
+	margin: 0px 2%;
+	padding:10px 0px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.third h1,h2,span {
+	margin:10px 0px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+
+.third h1 {
+	color:#2AABE2;
+	font-size: 400%;
+}
+
+.third h2 {
+	color:#404041;
+	font-size: 200%;
+}
+
+.third span {
+	color:#404041;
+	font-size: 100%;
+}
+
+.third h1 i {
+	font-size: 200%;
+}
+
+.third span i {
+	color: #2AABE2;
+}
+
+.programcontent {
+	width:100%;
+	background: #404041;
+	margin: 0px;
+	overflow: auto;
+}
+
+.programcontent .container {
+	padding:2% 0px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.programcontent h1 {
+	width: 100%;
+	text-align: center;
+	font-family: Josefin Sans;
+	font-size: 200%;
+	color:#fff;
+}
+
+.thirdcontent {
+	float: left;
+	width:29%;
+	height:auto;
+	box-sizing:border-box;
+	margin: 0px 2%;
+	padding:10px 0px;
+	border-radius: 5px;
+}
+
+.thirdcontent h1,h2,span {
+	margin:10px 0px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+
+.thirditem {
+	width:100%;
+	height:400px;
+	box-sizing: border-box;
+}
+
+.item-l {
+	float:left;
+	width:30%;
+	box-sizing: border-box;
+	padding-top: 0px;
+}
+
+.item-l span {
+	display: block;
+	border-radius:100%;
+	background-color: #000;
+	color:#fff;
+	font-size: 170%;
+	width:80%;
+	height:67px;
+	line-height: 67px;
+	vertical-align: middle;
+}
+
+.item-r {
+	width:70%;
+	float:left;
+	top:0px;
+	box-sizing: border-box;
+}
+
+.thirdcontent h1 {
+	color:#2AABE2;
+	font-size: 400%;
+}
+
+.item-r h2 {
+	color:#fff;
+	font-size: 125%;
+	text-align: left;
+	font-weight: normal;
+}
+
+.item-r span {
+	color:#fff;
+	font-size: 80%;
+	text-align: left;
+	line-height: 24px;
+}
+
+.promise {
+	background-color: #fff;
+	box-sizing:border-box;
+	overflow: auto;
+}
+
+.promise h1 {
+	width: 100%;
+	text-align: center;
+	font-family: Josefin Sans;
+	font-size: 200%;
+	color:#2AABE2;
+	margin: 40px 0px;
+}
+
+.promise .fourth {
+	float:left;
+	width:25%;
+	box-sizing:border-box;
+}
+
+.fourth h2 {
+	margin: 0px auto 40px auto;
+	font-size: 190%;
+}
+
+.tuition {
+	width:100%;
+	background: url(img/lockers.jpg) no-repeat center center fixed; 
+  	background-position: 0px 0px;
+  	-webkit-background-size: 100% auto;
+  	-moz-background-size: 100% auto;
+  	-o-background-size: 100% auto;
+  	background-size: 100% auto;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.tuition .container {
+	padding:50px;
+}
+
+.tuition h1 {
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 300px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.tuitioninfo {
+	width:100%;
+	background: url(img/grainbg.png) repeat; 
+	margin: 0px;
+}
+
+.tuitioninfo .container {
+	padding:2% 0px;
+	box-sizing: border-box;
+}
+
+.tuitioninfo .third {
+	float: left;
+	width:31%;
+	height:250px;
+	box-sizing:border-box;
+	margin: 70px 2%;
+	padding:10px 0px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.tuitioninfo .third p {
+	margin:5px;
+}
+
+.tuitioninfo .two-third {
+	float: left;
+	width:61%;
+	height:250px;
+	box-sizing:border-box;
+	margin: 0px 2%;
+	padding:10px 0px;
+	color: #404041;
+	text-align: right;
+}
+
+.tuitioninfo .two-third h2 {
+	font-size: 200%;
+	text-align: right;
+}
+
+.tuitioninfo .two-third span {
+	text-align: left;
+}
+
+.tuitioninfo .two-third a {
+	text-decoration: none;
+	color:#fff;
+	vertical-align: middle;
+	padding:10px 30px;
+	background: #000;
+}
+
+.apply {
+	width:100%;
+	background: url(img/computer.png) no-repeat center center fixed; 
+  	background-position: 0px -400px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.apply .container {
+	padding:50px;
+}
+
+.apply .container h1 {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 200px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	
+	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.applyinfo {
+	width:100%;
+	background: url(img/grainbg.png) repeat-x; 
+	background-color: #404041;
+	margin: 0px;
+}
+
+.applyinfo .container {
+	padding:2% 0px;
+	box-sizing: border-box;
+}
+
+.applyinfo h1 {
+	color:#404041;
+	font-size: 200%;
+}
+
+.applyinfo span {
+	color:#404041;
+	text-align: left;
+	display: block;
+}
+
+.applyinfo .half {
+	float: left;
+	width:44%;
+	height:250px;
+	box-sizing:border-box;
+	margin: 70px 2%;
+	padding:10px 0px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.half h1 {
+	color:#2AABE2;
+	font-size: 250%;
+	text-align: center;
+}
+
+.half:hover {
+	background: #fff url(img/cal.png) center center no-repeat;
+	background-position: 50% 50%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: 40% auto;
+}
+
+.faq {
+	width:100%;
+	background: url(img/smokestack.jpg) no-repeat center center fixed; 
+  	background-position: 0px 30px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.faq .container {
+	padding:50px;
+}
+
+.faq h1 {
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 350px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.faqcontent {
+	width:100%;
+	background: #fff;
+	margin: 0px;
+	overflow: auto;
+}
+
+.faqcontent .halves {
+	width:46%;
+	margin: 0px 2%;
+	float: left;
+	padding:10px 0px;
+}
+
+.faq-item h1 {
+	margin: 25px auto 0px auto;
+	color:#2AABE2;
+	font-size: 140%;
+	font-weight: normal;
+	text-align: left;
+}
+
+.faq-item span {
+	color:#404041;
+	text-align: justify;
+}
+
+.faq-item img {
+	width:100%;
+	margin: 25px 0px 5px 0px;
+}
+
+
+.contact {
+	width:100%;
+	background: url(img/googlemaps.jpg) no-repeat center center fixed; 
+  	background-position: 0px -50px;
+  	-webkit-background-size: 100% auto;
+  	-moz-background-size: 100% auto;
+  	-o-background-size: 100% auto;
+  	background-size: 100% auto;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.contact .container {
+	padding:50px;
+}
+
+.contact h1 {
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 300px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.contactinfo {
+	width:100%;
+	background: #2AABE2;
+	margin: 0px;
+}
+
+.contactinfo .container {
+	padding:2% 0px;
+	box-sizing: border-box;
+}
+
+.contactinfo .third {
+	float: left;
+	width:31%;
+	height:250px;
+	box-sizing:border-box;
+	margin: 40px 2%;
+	padding:10px 0px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.contactinfo .third p {
+	margin:5px;
+}
+
+.contactinfo .two-third {
+	float: left;
+	width:61%;
+	height:250px;
+	box-sizing:border-box;
+	margin: 0px 2%;
+	padding:10px 0px;
+	color: #404041;
+	text-align: right;
+}
+
+
+.contactinfo .two-third h2 {
+	font-size: 200%;
+	text-align: left;
+}
+
+.contactinfo .two-third span {
+	text-align: left;
+}
+
+.contactinfo .two-third a {
+	text-decoration: none;
+	color:#fff;
+	vertical-align: middle;
+}
+
+.contact1 {
+	width:25%;
+	float: left;
+}
+
+.contact2 {
+	width:75%;
+	float: left;
+}
+
+.contact2 a:hover {
+	color:#000;
+}
+
+.employers {
+	width:100%;
+	background: url(img/camp4.jpg) no-repeat center center fixed; 
+  	background-position: 0px -450px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.employers .container {
+	padding:50px;
+}
+
+.employers h1 {
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 220px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.employerscontent {
+	width:100%;
+	background: #fff;
+	margin: 0px;
+	overflow: auto;
+	padding: 0px 0px;
+}
+
+.employerscontent h1 {
+	color:#404041;
+	font-size: 250%;
+	margin: 5px 0px;
+}
+
+.ouremployers {
+	width:100%;
+	background: #404041;
+	padding: 40px 0px;
+}
+
+.employerscontent h2 {
+	color:#fff;
+	font-size: 180%;
+	text-align: left;
+	font-family: Josefin Sans;
+
+}
+
+.employerscontent h3 {
+	color:#fff;
+	font-size: 120%;
+	text-align: left;
+}
+
+.employerscontent .halves {
+	width:46%;
+	margin: 0px 2%;
+	float: left;
+	padding:10px 0px;
+}
+
+.employerscontent .halves span {
+	color:#fff;
+	font-size: 100%;
+	margin: 0px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.ourstudents {
+	width:100%;
+	background: #2AABE2;
+	padding: 40px 0px;
+}
+
+.ourstudents .fourth {
+	width:21%;
+	margin:2%;
+	height: 200px;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+	font-size: 100%;
+	color:#fff;
+	float:left;
+}
+
+.ourstudents span {
+	color:#fff;
+	font-size: 90%;
+	margin: 0px;
+	text-align: center;
+	padding: 0px 15%;
+}
+
+.ourmentors {
+	width:100%;
+	background: url(img/ourmentors.png) no-repeat center center fixed; 
+  	background-position: 0px -200px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding: 40px 0px;
+}
+
+.ourmentors .container a {
+	display: inline-block;
+	text-decoration: none;
+	color:#404041;
+	vertical-align: middle;
+	padding:20px 20px;
+	margin:70px auto 0px 100px;
+	background: #2AABE2;
+	width:70%;
+	text-align: center;
+	color:#fff;
+}
+
+#employer-btn {
+	position: absolute;
+	text-decoration: none;
+	color:#404041;
+	vertical-align: middle;
+	padding:20px 20px;
+	margin-top: 55px;
+	background: #2AABE2;
+	text-align: center;
+	color:#fff;
+	right:0px;
+}
+
+.mentors {
+	width:100%;
+	background: url(img/computer.png) no-repeat center center fixed; 
+  	background-position: 0px -400px;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	margin: 0px;
+	padding: 13% 0px 5% 0px;
+}
+
+.mentors .container {
+	padding:50px;
+}
+
+.mentors .container h1 {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+	padding: 30px; 
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	width: 200px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.mentorsinfo {
+	width:100%;
+	background: url(img/grainbg.png) repeat-x; 
+	background-color: #404041;
+	margin: 0px;
+}
+
+.mentorsinfo .container {
+	padding:2% 0px;
+	box-sizing: border-box;
+}
+
+.mentorsinfo h1 {
+	color:#404041;
+	font-size: 200%;
+}
+
+.mentorsinfo span {
+	color:#404041;
+	text-align: left;
+	display: block;
+}
+
+.mentorsinfo .halves {
+	width:46%;
+	margin: 0px 2%;
+	float: left;
+	padding:10px 0px;
+}
+
+#mentorapply {
+	position: absolute;
+	text-decoration: none;
+	color:#404041;
+	vertical-align: middle;
+	padding:20px 20px;
+	margin-top: 55px;
+	background: #2AABE2;
+	text-align: center;
+	color:#fff;
+	right:0px;
 }
